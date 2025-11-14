@@ -2,11 +2,11 @@
 <html>
   <head>
     <title>Website-Projekt</title>
-    <meta name="AUTHOR" content="Euer Name">
-    <meta name="COPYRIGHT" content="Copyright (c) 2025 by Vorname Nachname">
+    <meta name="AUTHOR" content="Anna Enns">
+    <meta name="COPYRIGHT" content="Copyright (c) 2025 by Anna Enns">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
-    <meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Vorname Nachname">
-    <meta name ="KEYWORDS" content ="Bewerbungshomepage, Vorname Nachname, Bewerbung">
+    <meta name="DESCRIPTION" content="Dies ist die Bewerbungshomepage von Anna Enns">
+    <meta name ="KEYWORDS" content ="Bewerbungshomepage, Anna Enns, Bewerbung">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -16,7 +16,45 @@
     <script src="/script.js" defer></script>
   </head>
 
-  <body>
-    <p>Hello World</p>
-  </body>
+    <!-- import the webpage's fonts -->
+    <link rel="stylesheet" href="/fonts.css" />
+   <!-- Einbindung der Javascript-Bibliothek JQUERY von GOOGLE -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+ <body onload="setTimeout(function() {setActiveMenu('#main_menu_item_home');}, 1000);">
+
+	<div id="kopfbereich">
+	<img class=“header-image“ src="passbild.jpg" alt="Passbild">
+	</div> <!-- Ende kopfbereich -->
+	<div id="navibereich">
+
+    <ul id="nav" class="naviformat mainnav">
+<li><a id="main_menu_item_home" class="" href="index.html">HOME</a></li>
+<li><a id="main_menu_item_daten" class="" href="daten.html">PERSÖNLICHES</a></li>
+<li><a id="main_menu_item_schulbildung" class="" href="schulbildung.html">SCHULBILDUNG</a></li>
+<li><a id="main_menu_item_berufsbildung" class="" href="berufsbildung.html">BERUFSBILDUNG</a></li>
+<li><a id="main_menu_item_kontakt" class="" href="kontakt.html">KONTAKT</a></li>
+
+
+	</div> <!-- Ende navibereich -->
+	<div id="textbereich">
+            	  <div class="content-block">
+
+	       <p class="title">Dies ist eine Überschrift</p> 
+	       <p>Dies ist ein Beispieltext</p>
+           	  </div><!-- Ende content-block -->
+	</div> <!-- Ende textbereich -->
+	<div id="newsbereich">
+    <div class = ”teaser”>
+<p class = ”teaser_date”>14.11.2025</p>
+<p class = ”teaser_title”></p>
+<p class = ”teaser_text”>Dies ist der News-Text</p>
+<a href = ”berufsbildung.html” class=“teaser_link“>...mehr</a>
+<hr class=“teaser_border“>
+</div>
+
+	</div> <!-- Ende newsbereich -->
+	<div id="fussbereich">
+	</div> <!-- Ende fussbereich -->
+</body>
 </html>
